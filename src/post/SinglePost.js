@@ -224,7 +224,7 @@ class SinglePost extends Component {
 						</div>
 						</div>
                         <div className="service-book">
-								<a href="book-service.html" className="btn btn-primary"> Skicka ett medelande </a>
+								<a href="" className="btn btn-primary"> Skicka ett medelande </a>
 							</div>
 					</div>
 				</div>
