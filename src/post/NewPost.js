@@ -28,16 +28,16 @@ class NewPost extends Component {
     }
 
     isValid = () => {
-        const { title, body, fileSize } = this.state;
+        const { title, body, model, city, email, phone, fileSize } = this.state;
         if (fileSize > 100000) {
             this.setState({
-                error: "File size should be less than 100kb",
+                error: "Filstorleken bör vara mindre än 100 kb",
                 loading: false
             });
             return false;
         }
-        if (title.length === 0 || body.length === 0) {
-            this.setState({ error: "All fields are required", loading: false });
+        if (title.length === 0 || body.length === 0 || model.length === 0 || city.length === 0 || email.length === 0 || phone.length === 0) {
+            this.setState({ error: "Alla fält måste vara ifyllda", loading: false });
             return false;
         }
         return true;
@@ -68,10 +68,6 @@ class NewPost extends Component {
                         loading: false,
                         title: "",
                         body: "",
-                        model:"",
-                        city:"",
-                        phone: "",
-                        email: "",
                         redirectToProfile: true
                     });
                 }
@@ -88,7 +84,6 @@ class NewPost extends Component {
 							<h2>Skapa annons</h2>
 						</div>
 						<form>
-                        <div className="alert alert-danger">Alla fält måste vara ifyllda</div>
 							<div className="service-fields mb-3">
 								<h3 className="heading-2">Information</h3>
 								<div className="row">
@@ -179,7 +174,7 @@ class NewPost extends Component {
 							<div className="submit-section">
                             <button
                 onClick={this.clickSubmit}
-                className="btn btn-raised btn-primary"
+                className="btn btn-raised btn-primary mb-3"
             >
                 Skapa annons
             </button>
@@ -212,14 +207,12 @@ class NewPost extends Component {
         }
 
         return (
-            <div className="content">
-                <div
-                    className="alert alert-danger"
-                    style={{ display: error ? "" : "none" }}
-                >
-                    {error.message}
-                </div>
-
+            <div className="content"><div
+            className="alert alert-danger"
+            style={{ display: error ? "" : "none" }}
+        >
+       {error}
+        </div>
                 {loading ? (
                     <div className="jumbotron text-center">
                         <h2>Loading...</h2>
@@ -229,6 +222,15 @@ class NewPost extends Component {
                 )}
 
                 {this.newPostForm(title, body, model, city, phone, email)}
+                <div className="content">
+                    <div className="container">
+                <div className="alert alert-danger"
+                    style={{ display: error ? "" : "none" }}
+                >
+               {error}
+                </div>
+            </div>
+            </div>
             </div>
         );
     }

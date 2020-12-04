@@ -191,7 +191,7 @@ ul li {
 }
 .bg-danger-light {
 	background-color: rgba(242, 17, 54,0.12) !important;
-	color: #e63c3c !important;
+	color: #F2AE42 !important;
 }
 .bg-warning-light {
 	background-color: rgba(255, 152, 0,0.12) !important;
@@ -307,24 +307,24 @@ ul li {
     margin: 0 9px;
 }
 .pagination > ul li.active a {
-    background: #ff0080;
-    border-color: #ff0080;
+    background: #F2AE42;
+    border-color: #F2AE42;
     color: #fff;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #ff0080;
-    border: 1px solid #ff0080;
+    background-color: #F2AE42;
+    border: 1px solid #F2AE42;
 }
 .nav-pills .nav-link.active:hover, .nav-pills .show > .nav-link:hover {
-    background: #ff0080;
+    background: #F2AE42;
     color: #fff;
 }
 .nav-pills .nav-link {
     border-radius: .25rem;
-    color: #ff0080;
+    color: #F2AE42;
     background: #fff;
-    border: 1px solid #ff0080;
+    border: 1px solid #F2AE42;
 }
 .container {
 	max-width: 1200px;
@@ -381,7 +381,7 @@ ul li {
 	background-color: #00e65b;
 }
 .avatar-offline::before {
-	background-color: #ff0100;
+	background-color: #F2AE42;
 }
 .avatar-away::before {
 	background-color: #ffbc34;
@@ -473,8 +473,8 @@ ul li {
 .nav-tabs.nav-tabs-solid > .active > a,
 .nav-tabs.nav-tabs-solid > .active > a:hover,
 .nav-tabs.nav-tabs-solid > .active > a:focus {
-	background-color: #ff0080;
-	border-color: #ff0080;
+	background-color: #F2AE42;
+	border-color: #F2AE42;
 	color: #fff;
 }
 .tab-content {
@@ -960,12 +960,12 @@ ul li {
 	border-radius: 0 0 5px 5px;
 }
 .header-navbar-rht > li a.header-login:hover, .header-navbar-rht > li a.header-login:focus {
-    background-color: #e60073;
-    border-color: #e60073;
+    background-color: #F2AE42;
+    border-color: #F2AE42;
     color: #fff;
 }
 .header-navbar-rht li > .dropdown-menu a:hover {
-    color: #ff0080;
+    color: #F2AE42;
 	background-color: #fff;
 }
 .header-navbar-rht li > a.header-login {
