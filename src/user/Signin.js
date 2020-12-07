@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { signin, authenticate } from "../auth";
 import SocialLogin from "./SocialLogin";
-import Facebook from "./Facebook";
 
 
 class Signin extends Component {
@@ -75,10 +74,9 @@ class Signin extends Component {
                 Logga in
             </button>
 						<div className="login-or">	<span className="or-line"></span>
-							<span className="span-or">or</span>
+							<span className="span-or">Eller</span>
 						</div>
 						<div className="row form-row social-login">
-                        <Facebook />
 							<SocialLogin />
 						</div>
                         <Link to={`/signup`}>

@@ -116,7 +116,7 @@ class SinglePost extends Component {
 						<div className="service-view">
 							<div className="service-header">
 								<h1>{post.title}</h1>
-								<address className="service-location"><i className="fas fa-location-arrow"></i> {post.city}</address>
+								<address className="service-location"><i className="fas fa-home"></i> {post.city}</address>
                                 <div className="row">
 								<div className="col service-cate">
 									<a>Taxi</a>
@@ -153,24 +153,13 @@ class SinglePost extends Component {
 										<div className="card service-description">
 											<div className="card-body">
 												<h5 className="card-title">Beskrivning</h5>
-												<p className="mb-0">{post.body}</p>
+                                <strong>Model:</strong> {post.model}
+												<p className="mb-0 mt-2">{post.body}</p>
 											</div>
 										</div>
 									</div>
 									<div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 										<div className="card">
-											<div className="card-body">
-												<h5 className="card-title">Services Offered</h5>
-												<div className="service-offer">
-													<ul className="list-bullet">
-														<li>Lorem Ipsum</li>
-														<li>Lorem Ipsum</li>
-														<li>Lorem Ipsum</li>
-														<li>Lorem Ipsum</li>
-														<li>Lorem Ipsum</li>
-													</ul>
-												</div>
-											</div>
 										</div>
 									</div>
 									<div className="tab-pane fade" id="pills-book" role="tabpanel" aria-labelledby="pills-book-tab">
@@ -179,22 +168,7 @@ class SinglePost extends Component {
 												<div className="review-list">
                                                     <div className="review-img">
 														<img className="rounded-circle" src="assets/img/customer/user-01.jpg" alt=""/>
-													</div>
-                                                    <div className="review-info">
-                                                        <h5>Jeffrey Akridge</h5>
-                                                        <div className="review-date">August 06, 2020 20:07 pm</div>
-                                                        <p className="mb-0">Good Work</p>
-                                                    </div>
-                                                    <div className="review-count">
-                                                        <div className="rating">
-                                                            <i className="fas fa-star filled"></i>
-															<i className="fas fa-star filled"></i>
-															<i className="fas fa-star filled"></i>
-															<i className="fas fa-star filled"></i>
-															<i className="fas fa-star filled"></i>	
-                                                            <span className="d-inline-block average-rating">(5.0)</span>
-                                                        </div>
-                                                    </div>
+													</div>                                        
                                                 </div>
 											</div>
 										</div>
@@ -211,13 +185,12 @@ class SinglePost extends Component {
 									<div>
 										<a className="ser-provider-name">{post.postedBy.name}</a>
 										<p className="last-seen"><i className="fas fa-circle online"></i> Online</p>
-										<p className="text-muted mb-1">Medlem sedan Apr 2020</p>
 									</div>
 								</div>
 								<hr></hr>
 								<div className="provider-info">
-									<p className="mb-1"><i className="far fa-envelope"></i> <a href="#">{post.email}</a></p>
-									<p className="mb-0"><i className="fas fa-phone-alt"></i> {post.phone}</p>
+									<p className="mb-1"><i className="far fa-envelope"></i> <a href="">{post.email}</a></p>
+									<p className="mb-0"><i className="fas fa-phone-alt"></i> <a>{post.phone}</a></p>
 								</div>
 							</div>
                             <div className="sidebar-widget widget">

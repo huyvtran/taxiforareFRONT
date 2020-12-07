@@ -40,7 +40,7 @@ class SocialLogin extends Component {
         }
 
         return (
-            <div className="col-6">
+            <div className="col-12">
             <GoogleLogin
                 clientId="115301621988-9j84fjv0f2cb6gmgvbtm0uci396aj5o2.apps.googleusercontent.com"
                 onSuccess={this.responseGoogle}

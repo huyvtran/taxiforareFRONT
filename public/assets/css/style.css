@@ -1095,13 +1095,13 @@ ul li {
 
 .createButton {
 	background-color: #F2AE42;
-    border-radius: 8px;
-    padding: 8px 12px !important;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
+	border-radius: 8px;
+	padding: 4px 4px !important;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 /*-----------------
@@ -3651,8 +3651,8 @@ html.menu-opened body {
     margin-right: 15px;
 }
 .review-img img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 .review-count {

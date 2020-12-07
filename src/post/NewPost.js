@@ -36,8 +36,28 @@ class NewPost extends Component {
             });
             return false;
         }
-        if (title.length === 0 || body.length === 0 || model.length === 0 || city.length === 0 || email.length === 0 || phone.length === 0) {
+        if (title.length === 0) {
             this.setState({ error: "Alla fält måste vara ifyllda", loading: false });
+            return false;
+        }
+        if (model.length === 0) {
+            this.setState({ error: "Model måste vara anges", loading: false });
+            return false;
+        }
+        if (city.length === 0) {
+            this.setState({ error: "Stad måste vara anges", loading: false });
+            return false;
+        }
+        if (body.length === 0) {
+            this.setState({ error: "Ange en beskrivning", loading: false });
+            return false;
+        }
+        if (phone.length === 0) {
+            this.setState({ error: "Ett telefon nummer måste anges", loading: false });
+            return false;
+        }
+        if (email.length === 0) {
+            this.setState({ error: "E-postadress måste anges", loading: false });
             return false;
         }
         return true;

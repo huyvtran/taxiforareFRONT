@@ -71,8 +71,8 @@ class Menu extends Component {
               <img src="/assets/img/taxi01.jpg" className="img-fluid" alt="Logo"/>
             </a>
             {!isAuthenticated() && (
-            <a href="/post/create">
-           <button className="d-lg-none btn-primary createButton" href="/signin"><i className="fas fa-plus-circle mr-1"></i>Skapa annons</button>
+            <a className="createButton" href="/post/create">
+           <i className="fas fa-plus-circle mr-1"></i>Skapa annons
            </a>
            )}
           </div>
@@ -87,21 +87,6 @@ class Menu extends Component {
               <li>
               <a href="/">Startsida</a>
                         </li>
-              <li>
-                <a href="/">Kategorier</a>
-              </li>
-              <li className="has-submenu">
-                <a href="#">Sidor <i className="fas fa-chevron-down"></i></a>
-                <ul className="submenu">
-                  <li><a>Sök</a></li>
-                  <li><a>Skapa annons</a></li>
-                  <li><a>Edit Service</a></li>
-                  <li><a>Medelanden</a></li>
-                  <li><a>Om oss</a></li>
-                  <li><a>Kontakta oss</a></li>
-                  <li><a>Faq</a></li>
-                </ul>
-              </li>
               {!isAuthenticated() && (
                         <React.Fragment>
                             <li className="nav-item">
@@ -146,11 +131,8 @@ class Menu extends Component {
           <ul className="nav header-navbar-rht">
           {isAuthenticated() && (
                         <React.Fragment>
-                          <li className="nav-item logged-item">
-              <a className="nav-link">
-                <i className="fa fa-comments" aria-hidden="true"></i>
-              </a>
-            </li>
+                                        <Link to={`/post/create`} className="nav-link header-login">
+            </Link>
                            
             <li>
               <Link to={`/post/create`} className="nav-link header-login">

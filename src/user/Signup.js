@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { signup } from "../auth";
 import { Link } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
-import Facebook from "./Facebook";
 
 class Signup extends Component {
     constructor() {
@@ -88,7 +87,6 @@ class Signup extends Component {
 							<span class="span-or">Eller</span>
 						</div>
 						<div class="row form-row social-login">
-                        <Facebook />
 							<SocialLogin />
 						</div>
 					</form>

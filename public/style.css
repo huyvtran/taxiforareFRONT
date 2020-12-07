@@ -3639,8 +3639,8 @@ html.menu-opened body {
     margin-right: 15px;
 }
 .review-img img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 .review-count {
